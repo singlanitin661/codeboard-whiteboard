@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Whiteboard Extended</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <style>
+    * {
+      user-select: none;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #app {
+      height: 98%;
+      margin: 0 0 0 5px;
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background-size: 100px;
+    }
+
+    #container {
+      display: flex;
+      flex: 1;
+    }
+
+    #whiteBoard {
+      border: 1px;
+      flex: 1;
+    }
+
+    #tools {
+      display: block;
+    }
+
+    #tools>div {
+      width: 46px;
+      padding: 8px;
+      font-size: 30px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #tools>div.selected {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
